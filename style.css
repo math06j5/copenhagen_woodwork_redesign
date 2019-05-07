@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*---- Katja ---*/
 #about {
     display: flex;
@@ -33,3 +34,95 @@ p {
 .video {}
 
 /*---- Katja ---*/
+=======
+/******** gennerelle indstillinger ********/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+div {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 6.4rem;
+    letter-spacing: 0.12rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 3.2rem;
+    letter-spacing: 0.12rem;
+    font-weight: 800;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+a {
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 500;
+}
+
+/******** slut ********/
+
+/******** #header ********/
+
+
+
+/******** #header slut ********/
+
+/******** #splash ********/
+
+
+
+/******** #splash slut ********/
+
+/******** #about ********/
+
+
+
+/******** #about slut ********/
+
+/******** #contact ********/
+
+
+
+/******** #contact slut ********/
+
+/******** #footer ********/
+
+
+
+/******** #footer slut ********/
+>>>>>>> origin/master
