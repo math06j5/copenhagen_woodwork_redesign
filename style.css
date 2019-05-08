@@ -94,27 +94,28 @@ div {
 }
 
 h1 {
-    font-size: 6.4rem;
+    font-size: 4.8rem;
     letter-spacing: 0.12rem;
     font-weight: 800;
     text-transform: uppercase;
 }
 
 h2 {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     letter-spacing: 0.12rem;
     font-weight: 800;
 }
 
 p {
     font-weight: 300;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 a {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #000;
     font-weight: 500;
+    text-decoration: none;
 }
 
 /******** slut ********/
@@ -139,7 +140,126 @@ a {
 
 /******** #contact ********/
 
+#contact {
+    background-color: #f2f2f2;
+    display: flex;
+}
 
+#contact h1 {
+    text-align: center;
+}
+
+#contact .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#contact .box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 20px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#contact input[type=text],
+select,
+input[type=email],
+input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact input[type=submit] {
+    width: 100%;
+    background-color: #001dff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact input[type=submit]:hover {
+    background-color: #001dff;
+}
+
+#contact .grid {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "addpng addcon addcon"
+        "tlfpng tlfcon tlfcon"
+        "mailpng mailcon mailcon"
+        "some some some";
+
+}
+
+#contact .grid .add_con {
+    grid-area: addcon;
+}
+
+#contact .grid .add_png {
+    width: 8vw;
+    height: 13vw;
+    grid-area: addpng;
+    display: flex;
+}
+
+#contact .add_png img {}
+
+#contact .box .info {
+    margin: 2vw 1vw;
+}
+
+#contact .grid .tlf_con {
+    grid-area: tlfcon;
+}
+
+#contact .grid .tlf_png {
+    width: 13vw;
+    height: 13vw;
+    grid-area: tlfpng;
+}
+
+#contact .grid .mail_con {
+    grid-area: mailcon;
+}
+
+#contact .grid .mail_png {
+    width: 13vw;
+    height: 10vw;
+    grid-area: mailpng;
+}
+
+#contact .grid .some {
+    grid-area: some;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .grid .some .icons {
+    width: 13vw;
+    height: 13vw;
+    margin: 1vw 4vw;
+}
 
 /******** #contact slut ********/
 
