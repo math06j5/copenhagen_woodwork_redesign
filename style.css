@@ -1,3 +1,4 @@
+<<<<<<< HEAD=======
 /*---- Katja ---*/
 
 * {
@@ -27,6 +28,84 @@
     padding: 1em;
 }
 
+/*NAV MENU*/
+
+/* unvisited link */
+header nav a:link {
+    color: black;
+}
+
+/* visited link */
+header nav a:visited {
+    color: black;
+}
+
+/* mouse over link */
+header nav a:hover {
+    color: grey;
+}
+
+/* selected link */
+header nav a:active {
+    color: black;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1rem 1rem;
+}
+
+header nav a {
+    font-size: 1.2rem;
+    font-family: 'oswald', sans-serif;
+    margin: 0.25rem 0;
+    padding: 0.25rem 0;
+}
+
+@media only screen and (min-width:1000px) {
+    header {
+        background-color: whitesmoke;
+
+    }
+
+    header nav {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+    }
+
+    header nav a {
+        font-size: 2.0rem;
+        margin: 0 5rem;
+        padding: 0;
+
+    }
+
+    header nav a:last-child {
+        border-right: none;
+    }
+
+    #styletile {
+        padding-top: 2rem;
+    }
+
+    #styletile h1 {
+        margin-bottom: 0;
+    }
+}
+
+/*NAV MENU SLUT*/
+
+
 h1,
 h2 {
     font-family: sans-serif;
@@ -46,7 +125,7 @@ p {
     display: block;
     width: 640px;
     height: 365px;
-    background-color: lightskyblue;
+    background-color: whit;
     position: absolute;
     top: 20vw;
     right: 1vw;
@@ -54,6 +133,7 @@ p {
 
 /*---- Katja ---*/
 
+> > > > > > > origin/master
 /******** gennerelle indstillinger ********/
 
 * {
@@ -84,34 +164,64 @@ h3,
 p,
 a,
 div {
-    font-family: 'Work Sans', sans-serif;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    font-size: 6.4rem;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 4.8rem;
     letter-spacing: 0.12rem;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 h2 {
-    font-size: 3.2rem;
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-size: 2.4rem;
     letter-spacing: 0.12rem;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 p {
-    font-weight: 300;
-    font-size: 1.6rem;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 a {
-    font-size: 1.3rem;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 1.2rem;
     color: #000;
-    font-weight: 500;
+    font-weight: 400;
+    text-decoration: none;
 }
+
+
+/*
+font-family: neue-haas-grotesk-display,sans-serif;
+font-weight: 200;
+font-style: normal;
+
+font-family: neue-haas-grotesk-display,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: neue-haas-grotesk-display,sans-serif;
+font-weight: 700;
+font-style: normal;
+
+font-family: neue-haas-grotesk-text,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+font-family: neue-haas-grotesk-text,sans-serif;
+font-weight: 700;
+font-style: normal;
+*/
+
 
 /******** slut ********/
 
@@ -129,17 +239,334 @@ a {
 
 /******** #about ********/
 
+/*---- Katja ---*/
 
+/*
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#about {
+    display: block;
+    flex-wrap: wrap;
+    width: 200rem;
+    height: 60rem;
+
+}
+*/
+
+#about .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    /*
+    width: 55em;
+    height: 15em;
+*/
+}
+
+.content {
+    margin: 1em;
+    padding: 1em;
+}
+
+/*
+h1,
+h2 {
+    font-family: sans-serif;
+    font-size: 1px;
+    margin: 0 0.5em 0;
+}
+*/
+
+/*
+p {
+    font-family: sans-serif;
+    margin: 0.8em;
+    padding: 0.5em;
+    width: 35vw;
+    height: 5vw;
+}*/
+
+#about .video {
+    /*    display: block;*/
+    display: flex;
+    /*
+    width: 640px;
+    height: 365px;
+*/
+    background-color: lightskyblue;
+    /*
+    position: absolute;
+    top: 20vw;
+    right: 1vw;
+*/
+}
+
+#about #video {
+    width: 100%;
+    height: 57%;
+}
+
+/*---- Katja ---*/
 
 /******** #about slut ********/
 
 /******** #contact ********/
 
+#contact {
+    background-color: #f2f2f2;
+}
 
+#contact h1 {
+    text-align: center;
+}
+
+#contact .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#contact .box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 20px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    margin: auto;
+}
+
+#contact input[type=text],
+select,
+input[type=email],
+input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact input[type=submit] {
+    width: 100%;
+    background-color: #001dff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact input[type=submit]:hover {
+    background-color: #001dff;
+}
+
+#contact .grid {
+    display: grid;
+    flex-grow: 1;
+    grid-template-columns: 50px 100px 100px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "addpng addcon addcon"
+        "tlfpng tlfcon tlfcon"
+        "mailpng mailcon mailcon"
+        "some some some";
+
+}
+
+#contact .grid .add_con {
+    grid-area: addcon;
+}
+
+#contact .grid .add_png {
+    width: 24px;
+    height: 39px;
+    grid-area: addpng;
+    display: flex;
+}
+
+#contact .add_png img {}
+
+#contact .box .info {
+    margin: 6px 3px;
+}
+
+#contact .grid .tlf_con {
+    grid-area: tlfcon;
+}
+
+#contact .grid .tlf_png {
+    width: 39px;
+    height: 39px;
+    grid-area: tlfpng;
+}
+
+#contact .grid .mail_con {
+    grid-area: mailcon;
+}
+
+#contact .grid .mail_png {
+    width: 39px;
+    height: 30px;
+    grid-area: mailpng;
+}
+
+#contact .grid .some {
+    grid-area: some;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .grid .some .icons {
+    width: 39px;
+    height: 39px;
+    margin: 3px 12px;
+}
+
+@media only screen and (min-width: 600px) {
+    #contact .sectionwrapper {
+        flex-direction: row;
+    }
+}
 
 /******** #contact slut ********/
 
 /******** #footer ********/
+
+
+footer .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*    width: 100%;
+    height: 100%;*/
+    background-color: #79858B;
+}
+
+footer .box {
+    padding: 10px 0 0 10px;
+}
+
+
+
+footer .logo_txt {
+    line-height: 30px;
+    /*    height: 100%;
+    width: 200px;*/
+    color: #B5B5B5;
+
+}
+
+footer .logo img {
+    width: 150px;
+}
+
+
+footer .grid {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 1fr 180px 140px 180px;
+    grid-template-areas:
+        "logo ."
+        "explore visit"
+        "follow kontakt"
+        "follow legal";
+}
+
+footer .logo {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-area: logo;
+
+}
+
+footer .explore {
+    grid-area: explore;
+}
+
+footer .follow {
+    grid-area: follow;
+
+}
+
+footer .kontakt {
+    grid-area: kontakt;
+}
+
+footer .visit {
+    grid-area: visit;
+
+}
+
+footer .legal {
+    grid-area: legal;
+}
+
+footer h3 {
+    font-weight: bold;
+    color: white;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-style: normal;
+}
+
+
+footer li,
+a {
+    text-decoration: none;
+    color: #b5b5b5;
+    list-style-type: none;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 30px;
+    font-size: 0.8rem;
+}
+
+footer .copyright {
+    color: #b5b5b5;
+    font-size: 0.6rem;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-style: normal;
+}
+
+footer a:hover {
+    background-color: #79858B;
+    color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+    footer .grid {
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "logo explore visit follow legal"
+            "logo explore kontakt . .";
+    }
+}
+
 
 
 
