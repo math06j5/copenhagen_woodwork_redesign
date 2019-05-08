@@ -1,33 +1,80 @@
-<<<<<<< HEAD
-=======
-/*---- Katja ---*/
+/******** gennerelle indstillinger ********/
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
     margin: 0;
     padding: 0;
 }
 
-#about {
-    display: block;
-    flex-wrap: wrap;
-    width: 200rem;
-    height: 60rem;
-
+img {
+    width: 100%;
 }
 
-#about .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1rem;
-    width: 55em;
-    height: 15em;
+section {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.content {
-    margin: 1em;
-    padding: 1em;
+h1,
+h2,
+h3,
+p,
+a,
+div,
+li {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
 }
+
+h1 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 4.8rem;
+    letter-spacing: 0.12rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-size: 2.4rem;
+    letter-spacing: 0.12rem;
+    font-weight: 700;
+}
+
+h3 {
+
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+a {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/******** slut ********/
+
+/******** #header ********/
 
 /*NAV MENU*/
 
@@ -106,130 +153,6 @@ header nav a {
 
 /*NAV MENU SLUT*/
 
-
-h1,
-h2 {
-    font-family: sans-serif;
-    font-size: 1px;
-    margin: 0 0.5em 0;
-}
-
-p {
-    font-family: sans-serif;
-    margin: 0.8em;
-    padding: 0.5em;
-    width: 35vw;
-    height: 5vw;
-}
-
-.video {
-    display: block;
-    width: 640px;
-    height: 365px;
-    background-color: whit;
-    position: absolute;
-    top: 20vw;
-    right: 1vw;
-}
-
-/*---- Katja ---*/
-
->>>>>>> origin/master
-/******** gennerelle indstillinger ********/
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-img {
-    width: 100%;
-}
-
-section {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-h1,
-h2,
-h3,
-p,
-a,
-div {
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-size: 4.8rem;
-    letter-spacing: 0.12rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-family: neue-haas-grotesk-text, sans-serif;
-    font-size: 2.4rem;
-    letter-spacing: 0.12rem;
-    font-weight: 700;
-}
-
-p {
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-}
-
-a {
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-size: 1.2rem;
-    color: #000;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-
-/*
-font-family: neue-haas-grotesk-display,sans-serif;
-font-weight: 200;
-font-style: normal;
-
-font-family: neue-haas-grotesk-display,sans-serif;
-font-weight: 400;
-font-style: normal;
-
-font-family: neue-haas-grotesk-display,sans-serif;
-font-weight: 700;
-font-style: normal;
-
-font-family: neue-haas-grotesk-text,sans-serif;
-font-weight: 400;
-font-style: normal;
-
-font-family: neue-haas-grotesk-text,sans-serif;
-font-weight: 700;
-font-style: normal;
-*/
-
-
-/******** slut ********/
-
-/******** #header ********/
-
-
-
 /******** #header slut ********/
 
 /******** #splash ********/
@@ -261,11 +184,21 @@ font-style: normal;
 #about .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     margin: 1rem;
+    justify-content: center;
     /*
     width: 55em;
     height: 15em;
 */
+}
+
+#about .container {
+    flex-basis: 500px;
+}
+
+#about .box {
+    padding: 1vw 0;
 }
 
 .content {
@@ -310,6 +243,15 @@ p {
     width: 100%;
     height: 57%;
 }
+
+@media only screen and (min-width: 600px) {
+    #about .sectionwrapper {
+        justify-content: flex-start;
+    }
+}
+
+
+
 
 /*---- Katja ---*/
 
@@ -446,11 +388,124 @@ input[type=tel] {
     #contact .sectionwrapper {
         flex-direction: row;
     }
+
+    #contact a:hover {
+        color: #000;
+    }
 }
 
 /******** #contact slut ********/
 
 /******** #footer ********/
+
+
+footer .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*    width: 100%;
+    height: 100%;*/
+    background-color: #79858B;
+}
+
+footer .box {
+    padding: 10px 0 0 10px;
+}
+
+
+
+footer .logo_txt {
+    line-height: 30px;
+    /*    height: 100%;
+    width: 200px;*/
+    color: #B5B5B5;
+
+}
+
+footer .logo img {
+    width: 150px;
+}
+
+
+footer .grid {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 1fr 180px 140px 180px;
+    grid-template-areas:
+        "logo ."
+        "explore visit"
+        "follow kontakt"
+        "follow legal";
+}
+
+footer .logo {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-area: logo;
+
+}
+
+footer .explore {
+    grid-area: explore;
+}
+
+footer .follow {
+    grid-area: follow;
+
+}
+
+footer .kontakt {
+    grid-area: kontakt;
+}
+
+footer .visit {
+    grid-area: visit;
+
+}
+
+footer .legal {
+    grid-area: legal;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer li,
+footer a {
+    color: #b5b5b5;
+}
+
+footer li a {
+    color: #b5b5b5;
+    line-height: 30px;
+}
+
+footer .copyright {
+    color: #b5b5b5;
+    font-size: 0.6rem;
+}
+
+footer a:hover {
+    background-color: #79858B;
+    color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+    footer .grid {
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "logo explore visit follow legal"
+            "logo explore kontakt . .";
+    }
+}
+
 
 
 
