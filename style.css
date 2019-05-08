@@ -1,3 +1,59 @@
+/*---- Katja ---*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#about {
+    display: block;
+    flex-wrap: wrap;
+    width: 200rem;
+    height: 60rem;
+
+}
+
+#about .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    width: 55em;
+    height: 15em;
+}
+
+.content {
+    margin: 1em;
+    padding: 1em;
+}
+
+h1,
+h2 {
+    font-family: sans-serif;
+    font-size: 1px;
+    margin: 0 0.5em 0;
+}
+
+p {
+    font-family: sans-serif;
+    margin: 0.8em;
+    padding: 0.5em;
+    width: 35vw;
+    height: 5vw;
+}
+
+.video {
+    display: block;
+    width: 640px;
+    height: 365px;
+    background-color: lightskyblue;
+    position: absolute;
+    top: 20vw;
+    right: 1vw;
+}
+
+/*---- Katja ---*/
+
 /******** gennerelle indstillinger ********/
 
 * {
