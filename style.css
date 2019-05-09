@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 <<<<<<< HEAD=======
+=======
+<<<<<<< HEAD img {
+
+    width: 100%;
+
+}
+
+=======
+>>>>>>> origin/master
 /*---- Katja ---*/
 
 * {
@@ -170,13 +180,27 @@ p {
     height: auto;
     background-color: white;
     position: absolute;
-    top: 20vw;
+    top: 10vw;
     right: 1vw;
 }
 
 /*---- Katja ---*/
 
+<<<<<<< HEAD
 > > > > > > > origin/master
+=======
+/******** #splash ********/
+#splash .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+
+/******** #splash slut ********/
+
+>>>>>>> origin/master
 /******** gennerelle indstillinger ********/
 
 * {
@@ -274,11 +298,7 @@ font-style: normal;
 
 /******** #header slut ********/
 
-/******** #splash ********/
 
-
-
-/******** #splash slut ********/
 
 /******** #about ********/
 
@@ -614,3 +634,4 @@ footer a:hover {
 
 
 /******** #footer slut ********/
+> > > > > > > origin/master
