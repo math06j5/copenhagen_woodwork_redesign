@@ -215,26 +215,21 @@ header input[type=text]:focus {
 #about .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    margin: 1em;
-    padding: 1em;
     align-content: center;
-    /*
-    width: 55em;
-    height: 15em;
-*/
+    margin: 5vw;
 }
 
 #about .container {
     flex-grow: 1;
-    flex-basis: 500px;
+    flex-basis: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 0 2vw 0 2vw;
 }
 
 #about .box {
-    padding: 1vw 0;
+    padding: 0 0 1vw;
 }
 
 #about #video {
@@ -242,33 +237,11 @@ header input[type=text]:focus {
     height: auto;
 }
 
-/*
-#about .video {
-    display: flex;
-    flex-basis: 500px;
-
-}
-
-#about #video_container {
-    display: flex;
-    justify-content: center;
-    background-color: lightskyblue;
-}
-
-#about #video {
-    max-width: 100%;
-    height: auto;
-}
-*/
-
 @media only screen and (min-width: 600px) {
     #about .sectionwrapper {
         justify-content: flex-start;
     }
 }
-
-
-
 
 /*---- Katja ---*/
 
@@ -278,13 +251,14 @@ header input[type=text]:focus {
 /******** #portfolio ********/
 
 
-#portfolio h1 {
+#portfolio h2 {
     text-align: center;
 }
 
 #portfolio .sectionwrapper {
     display: flex;
     flex-direction: column;
+    margin: 3vw 0 12vw 0;
 }
 
 #portfolio .top {
@@ -348,7 +322,7 @@ header input[type=text]:focus {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 5vw 0 3vw 5vw;
+    padding: 3vw 0 1vw 5vw;
 }
 
 #contact .box {
@@ -360,6 +334,7 @@ header input[type=text]:focus {
     flex-wrap: wrap;
     flex-direction: column;
     flex-grow: 1;
+    padding: 0 0 7vw 0;
 }
 
 #contact .box {
@@ -494,6 +469,7 @@ footer .sectionwrapper {
     /*    width: 100%;
     height: 100%;*/
     background-color: #79858B;
+    padding: 3vw 3vw 1vw 3vw;
 }
 
 footer .box {
