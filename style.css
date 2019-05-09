@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD img {
 
@@ -222,453 +223,648 @@ header input[type=text]:focus {
 }
 
 @media only screen and (min-width:1000px) {
-    header {
-        background-color: whitesmoke;
+=======
+    /******** gennerelle indstillinger ********/
+    * {
+        box-sizing: border-box;
+    }
 
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    section {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    a,
+    div,
+    li {
+        font-family: neue-haas-grotesk-display, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    h1 {
+        font-family: neue-haas-grotesk-display, sans-serif;
+        font-size: 4.8rem;
+        letter-spacing: 0.12rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-family: neue-haas-grotesk-text, sans-serif;
+        font-size: 2.4rem;
+        letter-spacing: 0.12rem;
+        font-weight: 700;
+    }
+
+    h3 {
+
+        font-family: neue-haas-grotesk-display, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    p {
+        font-family: neue-haas-grotesk-display, sans-serif;
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+
+    a {
+        font-family: neue-haas-grotesk-display, sans-serif;
+        font-size: 1.2rem;
+        color: #000;
+        font-weight: 400;
+        text-decoration: none;
+    }
+
+    /******** slut ********/
+
+    /******** #header ********/
+
+    /*NAV MENU*/
+
+
+    /* unvisited link */
+    header nav a:link {
+        color: black;
+    }
+
+    /* visited link */
+    header nav a:visited {
+        color: black;
+    }
+
+    /* mouse over link */
+    header nav a:hover {
+        color: grey;
+    }
+
+    /* selected link */
+    header nav a:active {
+        color: black;
+    }
+
+>>>>>>> origin/master
+    header {
+        position: fixed;
+        top: 0;
+
+        width: 100%;
+        z-index: 100;
     }
 
     header nav {
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
     header nav a {
-        font-size: 1.5rem;
-        margin: 0 5rem;
-        padding: 5;
+        font-size: 1.2rem;
+        font-family: 'oswald', sans-serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    header nav ul li {
+        margin: 1vw;
+        padding: 2vw;
+    }
+
+    .hidden {
+        /*    display: none;*/
+        /*    transform: scale(0);*/
+        transform: translateY(1%);
+        opacity: 0;
+    }
+
+    #menuknap {
+        display: inline-block;
+        font-size: 3.0rem;
+        margin: 1vw 2vw;
+    }
+
+    #menu {
+        list-style-type: none;
+        transition: transform .3s;
+        background-color: whitesmoke;
+        width: 100vw;
+        height: auto;
+        padding: 3vw 0 3vw 8vw;
+    }
+
+    .search {
+        display: none;
+    }
+
+    @media only screen and (min-width: 850px) {
+
+        header .logo {
+            background-image: url(CPHWW_Logo%20v2.png);
+            width: 5vw;
+            height: 3vw;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin-left: vw;
+        }
+
+        #menuknap {
+            display: none;
+        }
+
+        #menu {
+            transform: translateX(0);
+            opacity: 1;
+            padding: 0;
+            margin: 0;
+            width: auto;
+        }
+
+        #menu li {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: whitesmoke;
+
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            margin: 0.7vw;
+
+        }
+
+        header nav a {
+            font-size: 1.5rem;
+            margin: 0 5rem;
+            padding: 0;
+
+        }
+
+        header nav a:last-child {
+            border-right: none;
+        }
+
+        .search {
+            display: inherit;
+        }
+
+        header input[type=text] {
+            width: 130px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 11px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+        }
+
+        header input[type=text]:focus {
+            width: 100%;
+        }
 
     }
 
-    header nav a:last-child {
-        border-right: none;
+    /*NAV MENU SLUT*/
+
+    /******** header slut ********/
+
+    /******** #splash ********/
+
+    #splash {
+        max-width: none;
     }
 
-    #styletile {
-        padding-top: 2rem;
+    #splash .sectionwrapper {
+        background-image: url(kj%C3%B8kken.jpg);
+        width: 100vw;
+        height: 56.25vw;
+        background-size: 150%;
+        background-position: 50% 60%;
+        background-repeat: no-repeat;
+        background-attachment: local;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            ". . . ."
+            ". logo logo ."
+            ". container container ."
+            ". . . .";
     }
 
-    #styletile h1 {
-        margin-bottom: 0;
+    /*---- Katja ---*/
+
+
+    /******** #splash ********/
+    #splash .sectionwrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        grid-area: container;
+        color: white
     }
-}
 
-/*NAV MENU SLUT*/
-
-/******** slut ********/
-
-/******** #header ********/
+    /******** #splash slut ********/
 
 
+    /******** #about ********/
 
-/******** #header slut ********/
+    /*---- Katja ---*/
 
-
-
-/******** #about ********/
-
-/*---- Katja ---*/
-
-/*
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-#about {
-    display: block;
-    flex-wrap: wrap;
-    width: 200rem;
-    height: 60rem;
-
-}
-*/
-
-#about .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 1em;
-    padding: 1em;
-    align-content: center;
-    /*
-    width: 55em;
-    height: 15em;
-*/
-}
-
-#about .container {
-    flex-grow: 1;
-    flex-basis: 500px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#about .box {
-    padding: 1vw 0;
-}
-
-#about #video {
-    width: 100%;
-    height: auto;
-}
-
-/*
-#about .video {
-    display: flex;
-    flex-basis: 500px;
-
-}
-
-#about #video_container {
-    display: flex;
-    justify-content: center;
-    background-color: lightskyblue;
-}
-
-#about #video {
-    max-width: 100%;
-    height: auto;
-}
-*/
-
-@media only screen and (min-width: 600px) {
     #about .sectionwrapper {
-        justify-content: flex-start;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        margin: 5vw;
     }
-}
+
+    #about .container {
+        flex-grow: 1;
+        flex-basis: 400px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 2vw 0 2vw;
+    }
+
+    #about .box {
+        padding: 0 0 1vw;
+    }
+
+    #about #video {
+        width: 100%;
+        height: auto;
+    }
+
+    @media only screen and (min-width: 600px) {
+        #about .sectionwrapper {
+            justify-content: flex-start;
+        }
+    }
+
+    /*---- Katja ---*/
+
+    /******** #about slut ********/
 
 
+    /******** #portfolio ********/
 
 
-/*---- Katja ---*/
+    #portfolio h2 {
+        text-align: center;
+    }
 
-/******** #about slut ********/
+    #portfolio .sectionwrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 3vw 0 12vw 0;
+    }
 
+    #portfolio .top {
+        display: flex;
+        justify-content: center;
+    }
 
-/******** #portfolio ********/
+    #portfolio .middle {
+        display: flex;
+        justify-content: center;
+    }
 
-
-#portfolio h1 {
-    text-align: center;
-}
-
-#portfolio .sectionwrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-#portfolio .top {
-    display: flex;
-    justify-content: center;
-}
-
-#portfolio .middle {
-    display: flex;
-    justify-content: center;
-}
-
-#portfolio .buttom {
-    display: flex;
-    justify-content: center;
-}
+    #portfolio .buttom {
+        display: flex;
+        justify-content: center;
+    }
 
 
-#portfolio .img {
-    width: 30vw;
-    height: 30vw;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin: 1.5vw;
+    #portfolio .img {
+        width: 30vw;
+        height: 30vw;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 1.5vw;
 
-}
+    }
 
-#portfolio .top .img_1 {
-    background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/IMG_0002-1.jpg);
-    background-position: 1% 31%;
-}
+    #portfolio .top .img_1 {
+        background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/IMG_0002-1.jpg);
+        background-position: 1% 31%;
+    }
 
-#portfolio .top .img_2 {
-    background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/IMG_0710.jpg);
-    background-position: 1% 100%;
-}
+    #portfolio .top .img_2 {
+        background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/IMG_0710.jpg);
+        background-position: 1% 100%;
+    }
 
-#portfolio .buttom .img_1 {
-    background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/DSC02611-2-2.jpg);
-    background-size: 150%;
-    background-position: center;
-}
+    #portfolio .buttom .img_1 {
+        background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/DSC02611-2-2.jpg);
+        background-size: 150%;
+        background-position: center;
+    }
 
-#portfolio .buttom .img_2 {
-    background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/DSC01287-2.jpg);
-    background-size: 150%;
-    background-position: 10% 10%;
-}
-
-
-/******** #portfolio slut ********/
+    #portfolio .buttom .img_2 {
+        background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/DSC01287-2.jpg);
+        background-size: 150%;
+        background-position: 10% 10%;
+    }
 
 
-/******** #contact ********/
+    /******** #portfolio slut ********/
 
-#contact {
-    background-color: #f2f2f2;
-}
 
-#contact .content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 5vw 0 3vw 5vw;
-}
+    /******** #contact ********/
 
-#contact .box {
-    text-align: left;
-}
+    #contact {
+        background-color: #f2f2f2;
+    }
 
-#contact .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex-grow: 1;
-}
+    #contact .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 3vw 0 1vw 5vw;
+    }
 
-#contact .box {
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    padding: 20px;
-    flex-grow: 1;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
+    #contact .box {
+        text-align: left;
+    }
 
-#contact form {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 80%;
-    margin: auto;
-}
-
-#contact input[type=text],
-#contact select,
-#contact input[type=email],
-#contact input[type=tel] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-#contact input[type=submit] {
-    width: 100%;
-    background-color: #001dff;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#contact input[type=submit]:hover {
-    background-color: #001dff;
-}
-
-#contact .grid {
-    display: grid;
-    flex-grow: 1;
-    grid-template-columns: 50px 100px 100px;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "addpng addcon addcon"
-        "tlfpng tlfcon tlfcon"
-        "mailpng mailcon mailcon"
-        "some some some";
-
-}
-
-#contact .grid .add_con {
-    grid-area: addcon;
-}
-
-#contact .grid .add_png {
-    width: 24px;
-    height: 39px;
-    grid-area: addpng;
-    display: flex;
-}
-
-#contact .add_png img {}
-
-#contact .box .info {
-    margin: 6px 3px;
-}
-
-#contact .grid .tlf_con {
-    grid-area: tlfcon;
-}
-
-#contact .grid .tlf_png {
-    width: 39px;
-    height: 39px;
-    grid-area: tlfpng;
-}
-
-#contact .grid .mail_con {
-    grid-area: mailcon;
-}
-
-#contact .grid .mail_png {
-    width: 39px;
-    height: 30px;
-    grid-area: mailpng;
-}
-
-#contact .grid .some {
-    grid-area: some;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#contact .grid .some .icons {
-    width: 39px;
-    height: 39px;
-    margin: 3px 12px;
-}
-
-@media only screen and (min-width: 600px) {
     #contact .sectionwrapper {
-        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 0 0 7vw 0;
     }
 
-    #contact a:hover {
-        color: #000;
+    #contact .box {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        padding: 20px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
-}
 
-/******** #contact slut ********/
+    #contact form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 80%;
+        margin: auto;
+    }
 
-/******** #footer ********/
+    #contact input[type=text],
+    #contact select,
+    #contact input[type=email],
+    #contact input[type=tel] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #contact input[type=submit] {
+        width: 100%;
+        background-color: #001dff;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    #contact input[type=submit]:hover {
+        background-color: #001dff;
+    }
+
+    #contact .grid {
+        display: grid;
+        flex-grow: 1;
+        grid-template-columns: 50px 100px 100px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "addpng addcon addcon"
+            "tlfpng tlfcon tlfcon"
+            "mailpng mailcon mailcon"
+            "some some some";
+
+    }
+
+    #contact .grid .add_con {
+        grid-area: addcon;
+    }
+
+    #contact .grid .add_png {
+        width: 24px;
+        height: 39px;
+        grid-area: addpng;
+        display: flex;
+    }
+
+    #contact .add_png img {}
+
+    #contact .box .info {
+        margin: 6px 3px;
+    }
+
+    #contact .grid .tlf_con {
+        grid-area: tlfcon;
+    }
+
+    #contact .grid .tlf_png {
+        width: 39px;
+        height: 39px;
+        grid-area: tlfpng;
+    }
+
+    #contact .grid .mail_con {
+        grid-area: mailcon;
+    }
+
+    #contact .grid .mail_png {
+        width: 39px;
+        height: 30px;
+        grid-area: mailpng;
+    }
+
+    #contact .grid .some {
+        grid-area: some;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact .grid .some .icons {
+        width: 39px;
+        height: 39px;
+        margin: 3px 12px;
+    }
+
+    @media only screen and (min-width: 600px) {
+        #contact .sectionwrapper {
+            flex-direction: row;
+        }
+
+        #contact a:hover {
+            color: #000;
+        }
+    }
+
+    /******** #contact slut ********/
+
+    /******** #footer ********/
 
 
-footer .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /*    width: 100%;
+    footer .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /*    width: 100%;
     height: 100%;*/
-    background-color: #79858B;
-}
+        background-color: #79858B;
+        padding: 3vw 3vw 1vw 3vw;
+    }
 
-footer .box {
-    padding: 10px 0 0 10px;
-}
+    footer .box {
+        padding: 10px 0 0 10px;
+    }
 
 
 
-footer .logo_txt {
-    line-height: 30px;
-    /*    height: 100%;
+    footer .logo_txt {
+        line-height: 30px;
+        /*    height: 100%;
     width: 200px;*/
-    color: #B5B5B5;
+        color: #B5B5B5;
 
-}
+    }
 
-footer .logo img {
-    width: 150px;
-}
+    footer .logo img {
+        width: 150px;
+    }
 
 
-footer .grid {
-    display: grid;
-    margin: auto;
-    grid-template-columns: 40vw 40vw;
-    grid-template-rows: 1fr 180px 140px 180px;
-    grid-template-areas:
-        "logo ."
-        "explore visit"
-        "follow kontakt"
-        "follow legal";
-}
-
-footer .logo {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    align-items: flex-start;
-    grid-area: logo;
-
-}
-
-footer .explore {
-    grid-area: explore;
-}
-
-footer .follow {
-    grid-area: follow;
-
-}
-
-footer .kontakt {
-    grid-area: kontakt;
-}
-
-footer .visit {
-    grid-area: visit;
-
-}
-
-footer .legal {
-    grid-area: legal;
-}
-
-footer h3 {
-    color: white;
-}
-
-footer li,
-footer a {
-    color: #b5b5b5;
-}
-
-footer li a {
-    color: #b5b5b5;
-    line-height: 30px;
-}
-
-footer .copyright {
-    color: #b5b5b5;
-    font-size: 0.6rem;
-}
-
-footer a:hover {
-    background-color: #79858B;
-    color: white;
-}
-
-@media only screen and (min-width: 1000px) {
     footer .grid {
         display: grid;
         margin: auto;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 1fr 180px 140px 180px;
         grid-template-areas:
-            "logo explore visit follow legal"
-            "logo explore kontakt . .";
+            "logo ."
+            "explore visit"
+            "follow kontakt"
+            "follow legal";
     }
-}
+
+    footer .logo {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        grid-area: logo;
+
+    }
+
+    footer .explore {
+        grid-area: explore;
+    }
+
+    footer .follow {
+        grid-area: follow;
+
+    }
+
+    footer .kontakt {
+        grid-area: kontakt;
+    }
+
+    footer .visit {
+        grid-area: visit;
+
+    }
+
+    footer .legal {
+        grid-area: legal;
+    }
+
+    footer h3 {
+        color: white;
+    }
+
+    footer li,
+    footer a {
+        color: #b5b5b5;
+    }
+
+    footer li a {
+        color: #b5b5b5;
+        line-height: 30px;
+    }
+
+    footer .copyright {
+        color: #b5b5b5;
+        font-size: 0.6rem;
+    }
+
+    footer a:hover {
+        background-color: #79858B;
+        color: white;
+    }
+
+    @media only screen and (min-width: 1000px) {
+        footer .grid {
+            display: grid;
+            margin: auto;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "logo explore visit follow legal"
+                "logo explore kontakt . .";
+        }
+    }
 
 
 
 
-/******** #footer slut ********/
-> > > > > > > origin/master
+    /******** #footer slut ********/
