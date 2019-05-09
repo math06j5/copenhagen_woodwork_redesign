@@ -78,6 +78,7 @@ a {
 
 /*NAV MENU*/
 
+
 /* unvisited link */
 header nav a:link {
     color: black;
@@ -101,17 +102,15 @@ header nav a:active {
 header {
     position: fixed;
     top: 0;
-    background-color: whitesmoke;
+
     width: 100%;
-    padding-bottom: 0px;
-    padding-top: 20px;
+    z-index: 100;
 }
 
 header nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: 3rem 3rem;
 }
 
 header nav a {
@@ -121,45 +120,77 @@ header nav a {
     letter-spacing: 1px;
     font-size: 12px;
     text-transform: uppercase;
-    margin: 0.25rem 0;
-    padding: 0.25rem 0;
 }
 
-header input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 11px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+header nav ul li {
+    margin: 1vw;
+    padding: 2vw;
 }
 
-header input[type=text]:focus {
-    width: 100%;
+.hidden {
+    /*    display: none;*/
+    /*    transform: scale(0);*/
+    transform: translateY(1%);
+    opacity: 0;
 }
 
-@media only screen and (min-width:1000px) {
+#menuknap {
+    display: inline-block;
+    font-size: 3.0rem;
+    margin: 1vw 2vw;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    background-color: whitesmoke;
+    width: 100vw;
+    height: auto;
+    padding: 3vw 0 3vw 8vw;
+}
+
+.search {
+    display: none;
+}
+
+@media only screen and (min-width: 850px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu {
+        transform: translateX(0);
+        opacity: 1;
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+
+    #menu li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
     header {
         background-color: whitesmoke;
 
     }
 
     header nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: row;
-        justify-content: space-between;
-        margin-top: 1.5rem;
+        justify-content: center;
+        margin-top: 0;
     }
 
     header nav a {
         font-size: 1.5rem;
         margin: 0 5rem;
-        padding: 5;
+        padding: 0;
 
     }
 
@@ -167,50 +198,77 @@ header input[type=text]:focus {
         border-right: none;
     }
 
-    #styletile {
-        padding-top: 2rem;
+    .search {
+        display: inherit;
     }
 
-    #styletile h1 {
-        margin-bottom: 0;
+    header input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 11px;
+        background-color: white;
+        background-image: url('searchicon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
     }
+
+    header input[type=text]:focus {
+        width: 100%;
+    }
+
 }
 
 /*NAV MENU SLUT*/
 
-/******** slut ********/
-
-/******** #header ********/
-
-
-
-/******** #header slut ********/
+/******** header slut ********/
 
 /******** #splash ********/
+
+#splash {
+    max-width: none;
+}
+
+#splash .sectionwrapper {
+    background-image: url(kj%C3%B8kken.jpg);
+    width: 100vw;
+    height: 56.25vw;
+    background-size: 150%;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        ". . . ."
+        ". logo logo ."
+        ". container container ."
+        ". . . .";
+}
+
+#splash .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    grid-area: container;
+    color: white
+}
+
 
 
 
 /******** #splash slut ********/
 
+
 /******** #about ********/
 
 /*---- Katja ---*/
-
-/*
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-#about {
-    display: block;
-    flex-wrap: wrap;
-    width: 200rem;
-    height: 60rem;
-
-}
-*/
 
 #about .sectionwrapper {
     display: flex;
