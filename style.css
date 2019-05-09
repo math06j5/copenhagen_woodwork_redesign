@@ -300,14 +300,85 @@ p {
 
 /******** #about slut ********/
 
+
+/******** #portfolio ********/
+
+
+#portfolio h1 {
+    text-align: center;
+}
+
+#portfolio .sectionwrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolio .top {
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio .middle {
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio .buttom {
+    display: flex;
+    justify-content: center;
+}
+
+
+#portfolio .img {
+    width: 30vw;
+    height: 30vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1.5vw;
+
+}
+
+#portfolio .top .img_1 {
+    background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/IMG_0002-1.jpg);
+    background-position: 1% 31%;
+}
+
+#portfolio .top .img_2 {
+    background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/IMG_0710.jpg);
+    background-position: 1% 100%;
+}
+
+#portfolio .buttom .img_1 {
+    background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/DSC02611-2-2.jpg);
+    background-size: 150%;
+    background-position: center;
+}
+
+#portfolio .buttom .img_2 {
+    background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/DSC01287-2.jpg);
+    background-size: 150%;
+    background-position: 10% 10%;
+}
+
+
+/******** #portfolio slut ********/
+
+
 /******** #contact ********/
 
 #contact {
     background-color: #f2f2f2;
 }
 
-#contact h1 {
-    text-align: center;
+#contact .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5vw 0 3vw 5vw;
+}
+
+#contact .box {
+    text-align: left;
 }
 
 #contact .sectionwrapper {
