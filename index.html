@@ -14,8 +14,10 @@
 </head>
 
 <body>
+
     <header>
         <nav>
+<<<<<<< HEAD
             <!--  Jasmin  -->
             <div class="logo_nav">
                 <div class="img">
@@ -27,8 +29,19 @@
             <a href="#content">Content</a>
             <a href="#video">Video</a>
             <a href="#contact">Contact</a>
+=======
+            <!--            Jasmin-->
+
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+                <li><a href="#splash">Forside</a></li>
+                <li><a href="#about">om</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">kontakt</a></li>
+            </ul>
+>>>>>>> origin/master
             <form>
-                <input type="text" name="search" placeholder="Search..">
+                <input type="text" name="search" placeholder="Search.." class="search">
             </form>
 
 
@@ -38,17 +51,9 @@
     <!--  Agnes  -->
     <section id="splash">
         <div class="sectionwrapper">
-
-            <div>
-                <figure>
-                    <img src="kj%C3%B8kken.jpg">
-                    <div class="content">
-                        <h1>Skræddersyet snedkerlavet møbler og interiør</h1>
-                        <p> blahblah</p>
-
-                    </div>
-                </figure>
-
+            <div class="container">
+                <h1>Snedkerlavet<br> Møbler Og Interiør</h1>
+                <p></p>
             </div>
         </div>
     </section>
@@ -56,26 +61,34 @@
     <!--  Katja  -->
     <section id="about">
         <div class="sectionwrapper">
-            <div class="content">
-                <h2>Om Copenhagen Woodwork</h2>
-                <p>
-                    Copenhagen Woodwork laver alt fra de helt små skærebrætter til køkkener. Vi skrædersyer løsninger til alle der har en drøm og vi hjælper med at realiserer drømmen fra design og til produktion. </p>
+            <div class="container">
+                <div class="box">
+                    <h2>Om Copenhagen Woodwork</h2>
+                    <br>
+                    <p>Copenhagen Woodwork laver alt fra de helt små skærebrætter til køkkener. Vi skrædersyer løsninger til alle der har en drøm og vi hjælper med at realiserer drømmen fra design og til produktion.</p>
+                    <br>
+                    <h2>Håndværket i fokus</h2>
+                    <br>
+                    <p>Vi er snedkere med flair for design, funktionalitet og personlig service.
+                        Med os som sparringspartner er dit drømmekøkken tæt på at være en realitet.
+                        Vi laver skræddersyede løsninger, hvor udnyttelsen af rummet er essentiel, og vi arbejder ikke inden for standarder.
+                        Det er essensen af et snedkerkøkken.</p>
+                    <br>
+                    <p>Vi udvælger og bruger kun de bedste FSC-certificerede materialer hos vores lokale leverandører og bearbejder dem på vores værksted.
+                        På den måde opnår vi den kvalitet, vi ønsker.</p>
+                    <br>
+                    <p>Vi holder jer i hånden gennem hele projektet.
+                        Fra valg af design og materialer til levering og montering. Når detaljerne er på plads, sikrer vi, at køkkenet lever op til dine forventninger, at kvaliteten er i top, og det er klar til brug.</p>
+                    <br>
+                </div>
+            </div>
+            <div class="container">
+                <video id="video" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                </video>
 
-            </div>
-            <div class="content">
-                <h2>Passion for vores håndværk</h2>
-                <p>Vi er snedkere med flair for design, funktionalitet og personlig service.
-                    Med os som sparringspartner er dit drømmekøkken tæt på at være en realitet.
-                    Vi laver skræddersyede løsninger, hvor udnyttelsen af rummet er essentiel, og vi arbejder ikke inden for standarder.
-                    Det er essensen af et snedkerkøkken.</p>
-                <p>Vi udvælger og bruger kun de bedste FSC-certificerede materialer hos vores lokale leverandører og bearbejder dem på vores værksted.
-                    På den måde opnår vi den kvalitet, vi ønsker.</p>
-                <p>Vi holder jer i hånden gennem hele projektet.
-                    Fra valg af design og materialer til levering og montering. Når detaljerne er på plads, sikrer vi, at køkkenet lever op til dine forventninger, at kvaliteten er i top, og det er klar til brug.</p>
-            </div>
-            <div class="video">
-                <div id="video_container">
-                    <!-- Video/Embedlink? -->
+                <!--                 <div id="video_container">
+                    Video/Embedlink?
                     <video id="video">
                         <source src="video.mp4" type="video/mp4">
                         <p>
@@ -83,7 +96,7 @@
                             <a href="video.mp4">Download</a> the video instead.
                         </p>
                     </video>
-                    <!-- Video Controls -->
+                    Video Controls
                     <div id="video-controls">
                         <button type="button" id="play-pause">Play</button>
                         <input type="range" id="seek-bar" value="0">
@@ -91,15 +104,46 @@
                         <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
                         <button type="button" id="full-screen">Full-Screen</button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
 
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="sectionwrapper">
+            <div class="top">
+                <div class="img img_1"></div>
+                <div class="img img_2"></div>
+            </div>
+            <div class="buttom">
+                <div class="img img_1"></div>
+                <div class="img img_2"></div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
     <!-- Greiff  -->
     <section id="contact">
-        <h1>Kontakt</h1>
-        <p></p>
+
+        <div class="content">
+            <div class="box">
+                <h2>Send en uforpligtende forespørgsel</h2>
+                <p>Det er kun fantasien, der sætter grænser. Vi udfører mange forskellige specialopgaver, og din er helt sikkert noget for os.</p>
+                <p>For at kunne forberede os bedst muligt på dit køkken, efterspørger vi følgende oplysninger:</p>
+                <ul>
+                    <li>Design, materiale valg, inspiration
+                        Rum størrelse, antal elementer</li>
+                    <li>Evt. leveringstid</li>
+                    <li>Evt. budget</li>
+                </ul>
+            </div>
+        </div>
         <div class="sectionwrapper">
             <div class="box">
                 <form>
@@ -115,20 +159,13 @@
             <div class="box">
                 <div class="grid">
                     <img src="png/AI_mappointer.png" alt="" class="add_png info">
-
                     <a href="https://goo.gl/maps/SxgVKm5ZnhfQL5P98" target="_blank" class="add_con info">Valhøjs Allé 190D<br>2610 Rødovre<br>Danmark</a>
-
                     <img src="png/AI_telephone.png" alt="" class="tlf_png info">
-
                     <a href="tel:xxxxxxxx" class="tlf_con info">+45 61 60 88 05</a>
-
                     <img src="png/AI_mail.png" alt="" class="mail_png info">
-
                     <a href="mailto:xxxx@copenhagenwoodwork.dk" class="mail_con info">mail@copenhagenwoodwork.dk</a>
-
                     <div class="some info">
                         <a href="https://www.facebook.com/Copenhagenwoodwork/" target="_blank"><img src="png/face.png" alt="" class="icons"></a>
-
                         <a href="https://www.instagram.com/copenhagenwoodwork/" target="_blank">
                             <img src="png/insta.png" alt="" class="icons"></a>
                     </div>
@@ -141,36 +178,44 @@
 
     <!--  Johan  -->
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
     <footer>
         <div class="sectionwrapper">
             <div class="grid">
                 <div class="logo box"><img src="img/CPHWW_Logo%20v2.png" alt="logo">
                     <div class="logo_txt">
-                        <p>Vi er snedkere med flair for design, funktionalitet og personlig service.<br />
+                        <p>Vi er snedkere med flair for design, funktionalitet og personlig service.<br>
                             Med os som sparringspartner er dit drømme møbel tæt på at være en realitet.</p>
                     </div>
                 </div>
                 <div class="explore box">
                     <h3>Udforsk</h3>
                     <nav>
-                        <li><a href="#portofolie">Portofolie</a></li>
-                        <li><a href="#historie">Historien</a></li>
+                        <li><a href="#portfolio">Portofolie</a></li>
+                        <li><a href="#about">Historien</a></li>
                         <li><a href="#blog">Blog</a></li>
-                        <li><a href="#kontakt">Kontakt</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
                     </nav>
                 </div>
                 <div class="visit box">
                     <h3>Besøg os</h3>
-                    <li> Valhøjs Alle 190D </li>
-                    <li> 2610 Rødovre </li>
-                    <li>Danmark </li>
-                    <li>Cvr 3629397</li>
+                    <li>
+                        <a href="https://goo.gl/maps/7RBrGEihb36uuByY8">
+                            Valhøjs Alle 190D<br>
+                            2610 Rødovre<br>
+                            Danmark<br>
+                        </a>
+                    <li>
+                        <p>CVR 3629397</p>
+                    </li>
                 </div>
 
                 <div class="kontakt box">
                     <h3>Kontakt os</h3>
-                    <li>+45 61 60 88 05</li>
-                    <li>mail@copenhagenwoodwork.dk</li>
+                    <li><a href="tel:xxxxxxxx">+45 61 60 88 05</a></li>
+                    <li><a href="mailto:xxxx@copenhagenwoodwork.dk">mail@copenhagenwoodwork.dk</a></li>
                 </div>
                 <div class="follow box">
                     <h3>Follow</h3>
@@ -181,7 +226,7 @@
                 </div>
                 <div class="legal box">
                     <h3>Betingelser</h3>
-                    <li><a href="#handelsbetingelser">Handelsbetingelser</a></li>
+                    <li><a href="rights.html">Handelsbetingelser</a></li>
                     <li><a href="#kundeservice">Kundeservice</a></li>
                 </div>
             </div>
@@ -190,17 +235,18 @@
             </div>
         </div>
 
-
     </footer>
+<<<<<<< HEAD
 =======
     <footer></footer>
     >>>>>>> origin/master
 
 
+=======
+>>>>>>> origin/master
 
-    <<<<<<< HEAD </div> <script src="">
-        </script>
 
+<<<<<<< HEAD
 >>>>>>> origin/master
 
 </body>
@@ -217,3 +263,7 @@
 =======
 >>>>>>> origin/master
 </html>
+=======
+    <script src="script.js"></script>
+</body></html>
+>>>>>>> origin/master

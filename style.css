@@ -1,45 +1,96 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD=======
 =======
 <<<<<<< HEAD img {
-
-    width: 100%;
-
-}
-
 =======
+/******** gennerelle indstillinger ********/
 >>>>>>> origin/master
-/*---- Katja ---*/
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
+/*---- Katja ---*/
+=======
+body {
     margin: 0;
     padding: 0;
 }
+>>>>>>> origin/master
 
-#about {
-    display: block;
-    flex-wrap: wrap;
-    width: 200rem;
-    height: 60rem;
-
+img {
+    width: 100%;
 }
 
-#about .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 1rem;
-    width: 55em;
-    height: 15em;
+section {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.content {
-    margin: 1em;
-    padding: 1em;
+h1,
+h2,
+h3,
+p,
+a,
+div,
+li {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
 }
 
+h1 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 4.8rem;
+    letter-spacing: 0.12rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: neue-haas-grotesk-text, sans-serif;
+    font-size: 2.4rem;
+    letter-spacing: 0.12rem;
+    font-weight: 700;
+}
+
+h3 {
+
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+a {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/******** slut ********/
+
+/******** #header ********/
 
 /*NAV MENU*/
+
 
 /* unvisited link */
 header nav a:link {
@@ -64,17 +115,15 @@ header nav a:active {
 header {
     position: fixed;
     top: 0;
-    background-color: whitesmoke;
+
     width: 100%;
-    padding-bottom: 0px;
-    padding-top: 20px;
+    z-index: 100;
 }
 
 header nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: 3rem 3rem;
 }
 
 header nav a {
@@ -84,26 +133,77 @@ header nav a {
     letter-spacing: 1px;
     font-size: 12px;
     text-transform: uppercase;
-    margin: 0.25rem 0;
-    padding: 0.25rem 0;
 }
 
-@media only screen and (min-width:1000px) {
+header nav ul li {
+    margin: 1vw;
+    padding: 2vw;
+}
+
+.hidden {
+    /*    display: none;*/
+    /*    transform: scale(0);*/
+    transform: translateY(1%);
+    opacity: 0;
+}
+
+#menuknap {
+    display: inline-block;
+    font-size: 3.0rem;
+    margin: 1vw 2vw;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    background-color: whitesmoke;
+    width: 100vw;
+    height: auto;
+    padding: 3vw 0 3vw 8vw;
+}
+
+.search {
+    display: none;
+}
+
+@media only screen and (min-width: 850px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu {
+        transform: translateX(0);
+        opacity: 1;
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+
+    #menu li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
     header {
         background-color: whitesmoke;
 
     }
 
     header nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: row;
-        justify-content: space-between;
-        margin-top: 1.5rem;
+        justify-content: center;
+        margin-top: 0;
     }
 
     header nav a {
         font-size: 1.5rem;
         margin: 0 5rem;
-        padding: 5;
+        padding: 0;
 
     }
 
@@ -111,42 +211,32 @@ header nav a {
         border-right: none;
     }
 
-    #styletile {
-        padding-top: 2rem;
+    .search {
+        display: inherit;
     }
 
-    #styletile h1 {
-        margin-bottom: 0;
+    header input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 11px;
+        background-color: white;
+        background-image: url('searchicon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
     }
+
+    header input[type=text]:focus {
+        width: 100%;
+    }
+
 }
 
-    {
-    font-family: Arial;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus {
-    width: 100%;
-}
-
+<<<<<<< HEAD
 #logo_nav .img {
     max-height: 100%;
     position: absolute;
@@ -156,34 +246,37 @@ input[type=text]:focus {
 }
 
 
+=======
+>>>>>>> origin/master
 /*NAV MENU SLUT*/
 
+/******** header slut ********/
 
-h1,
-h2 {
-    font-family: sans-serif;
-    font-size: 1px;
-    margin: 0 0.5em 0;
+/******** #splash ********/
+
+#splash {
+    max-width: none;
 }
 
-p {
-    font-family: sans-serif;
-    margin: 0.8em;
-    padding: 0.5em;
-    width: 35vw;
-    height: 5vw;
+#splash .sectionwrapper {
+    background-image: url(kj%C3%B8kken.jpg);
+    width: 100vw;
+    height: 56.25vw;
+    background-size: 150%;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        ". . . ."
+        ". logo logo ."
+        ". container container ."
+        ". . . .";
 }
 
-.video {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    background-color: white;
-    position: absolute;
-    top: 10vw;
-    right: 1vw;
-}
-
+<<<<<<< HEAD
 /*---- Katja ---*/
 
 <<<<<<< HEAD
@@ -191,13 +284,20 @@ p {
 =======
 /******** #splash ********/
 #splash .sectionwrapper {
+=======
+#splash .container {
+>>>>>>> origin/master
     display: flex;
-    flex-wrap: wrap;
-
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    grid-area: container;
+    color: white
 }
 
 
 
+<<<<<<< HEAD
 /******** #splash slut ********/
 
 >>>>>>> origin/master
@@ -206,176 +306,115 @@ p {
 * {
     box-sizing: border-box;
 }
+=======
+>>>>>>> origin/master
 
-html {
-    font-size: 62.5%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-img {
-    width: 100%;
-}
-
-section {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-h1,
-h2,
-h3,
-p,
-a,
-div {
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-size: 4.8rem;
-    letter-spacing: 0.12rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-family: neue-haas-grotesk-text, sans-serif;
-    font-size: 2.4rem;
-    letter-spacing: 0.12rem;
-    font-weight: 700;
-}
-
-p {
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 400;
-    font-size: 1.2rem;
-}
-
-a {
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-size: 1.2rem;
-    color: #000;
-    font-weight: 400;
-    text-decoration: none;
-}
-
-
-/*
-font-family: neue-haas-grotesk-display,sans-serif;
-font-weight: 200;
-font-style: normal;
-
-font-family: neue-haas-grotesk-display,sans-serif;
-font-weight: 400;
-font-style: normal;
-
-font-family: neue-haas-grotesk-display,sans-serif;
-font-weight: 700;
-font-style: normal;
-
-font-family: neue-haas-grotesk-text,sans-serif;
-font-weight: 400;
-font-style: normal;
-
-font-family: neue-haas-grotesk-text,sans-serif;
-font-weight: 700;
-font-style: normal;
-*/
-
-
-/******** slut ********/
-
-/******** #header ********/
-
-
-
-/******** #header slut ********/
-
+/******** #splash slut ********/
 
 
 /******** #about ********/
 
 /*---- Katja ---*/
 
-/*
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-#about {
-    display: block;
-    flex-wrap: wrap;
-    width: 200rem;
-    height: 60rem;
-
-}
-*/
-
 #about .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem;
-    /*
-    width: 55em;
-    height: 15em;
-*/
+    align-content: center;
+    margin: 5vw;
 }
 
-.content {
-    margin: 1em;
-    padding: 1em;
-}
-
-/*
-h1,
-h2 {
-    font-family: sans-serif;
-    font-size: 1px;
-    margin: 0 0.5em 0;
-}
-*/
-
-/*
-p {
-    font-family: sans-serif;
-    margin: 0.8em;
-    padding: 0.5em;
-    width: 35vw;
-    height: 5vw;
-}*/
-
-#about .video {
-    /*    display: block;*/
+#about .container {
+    flex-grow: 1;
+    flex-basis: 400px;
     display: flex;
-    /*
-    width: 640px;
-    height: 365px;
-*/
-    background-color: lightskyblue;
-    /*
-    position: absolute;
-    top: 20vw;
-    right: 1vw;
-*/
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2vw 0 2vw;
+}
+
+#about .box {
+    padding: 0 0 1vw;
 }
 
 #about #video {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    #about .sectionwrapper {
+        justify-content: flex-start;
+    }
 }
 
 /*---- Katja ---*/
 
 /******** #about slut ********/
+
+
+/******** #portfolio ********/
+
+
+#portfolio h2 {
+    text-align: center;
+}
+
+#portfolio .sectionwrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 3vw 0 12vw 0;
+}
+
+#portfolio .top {
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio .middle {
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio .buttom {
+    display: flex;
+    justify-content: center;
+}
+
+
+#portfolio .img {
+    width: 30vw;
+    height: 30vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 1.5vw;
+
+}
+
+#portfolio .top .img_1 {
+    background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/IMG_0002-1.jpg);
+    background-position: 1% 31%;
+}
+
+#portfolio .top .img_2 {
+    background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/IMG_0710.jpg);
+    background-position: 1% 100%;
+}
+
+#portfolio .buttom .img_1 {
+    background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/DSC02611-2-2.jpg);
+    background-size: 150%;
+    background-position: center;
+}
+
+#portfolio .buttom .img_2 {
+    background-image: url(https://copenhagenwoodwork.dk/wp-content/uploads/2018/12/DSC01287-2.jpg);
+    background-size: 150%;
+    background-position: 10% 10%;
+}
+
+
+/******** #portfolio slut ********/
+
 
 /******** #contact ********/
 
@@ -383,8 +422,15 @@ p {
     background-color: #f2f2f2;
 }
 
-#contact h1 {
-    text-align: center;
+#contact .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3vw 0 1vw 5vw;
+}
+
+#contact .box {
+    text-align: left;
 }
 
 #contact .sectionwrapper {
@@ -392,6 +438,7 @@ p {
     flex-wrap: wrap;
     flex-direction: column;
     flex-grow: 1;
+    padding: 0 0 7vw 0;
 }
 
 #contact .box {
@@ -414,9 +461,9 @@ p {
 }
 
 #contact input[type=text],
-select,
-input[type=email],
-input[type=tel] {
+#contact select,
+#contact input[type=email],
+#contact input[type=tel] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -508,6 +555,10 @@ input[type=tel] {
     #contact .sectionwrapper {
         flex-direction: row;
     }
+
+    #contact a:hover {
+        color: #000;
+    }
 }
 
 /******** #contact slut ********/
@@ -522,6 +573,7 @@ footer .sectionwrapper {
     /*    width: 100%;
     height: 100%;*/
     background-color: #79858B;
+    padding: 3vw 3vw 1vw 3vw;
 }
 
 footer .box {
@@ -587,30 +639,22 @@ footer .legal {
 }
 
 footer h3 {
-    font-weight: bold;
     color: white;
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-style: normal;
 }
 
-
 footer li,
-a {
-    text-decoration: none;
+footer a {
     color: #b5b5b5;
-    list-style-type: none;
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-style: normal;
-    font-weight: 100;
+}
+
+footer li a {
+    color: #b5b5b5;
     line-height: 30px;
-    font-size: 0.8rem;
 }
 
 footer .copyright {
     color: #b5b5b5;
     font-size: 0.6rem;
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-style: normal;
 }
 
 footer a:hover {
@@ -634,4 +678,3 @@ footer a:hover {
 
 
 /******** #footer slut ********/
-> > > > > > > origin/master
